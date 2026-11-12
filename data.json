@@ -20,6 +20,11 @@
       "datum": "2026-11-12",
       "text": "test",
       "punkte": 10
+    },
+    {
+      "datum": "2026-11-12",
+      "text": "1",
+      "punkte": -10
     }
   ],
   "aufgaben": [
