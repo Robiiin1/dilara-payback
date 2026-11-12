@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Prämienkatalog</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23A51E36' d='M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Nunito:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="schnee" aria-hidden="true"></div>
+
+<header class="hero">
+<div class="sterne" aria-hidden="true">
+<svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+<svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+<svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+</div>
+<p class="eyebrow" id="eyebrow">Adventskalender</p>
+<h1>Prämienkatalog</h1>
+<p class="untertitel">Sammle Punkte und löse sie hier ein</p>
+<div class="trenner" aria-hidden="true"><span></span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span></span></div>
+</header>
+
+<main id="inhalt">
+<section class="karte konto" aria-labelledby="konto-titel">
+<h2 id="konto-titel" class="klein-titel">Dein Punktestand</h2>
+<p class="punkte-zahl"><span id="punkte">0</span><span class="punkte-einheit">Punkte</span></p>
+<div class="fortschritt" aria-hidden="true"><div class="fortschritt-balken" id="fortschritt"></div></div>
+<p class="naechste" id="naechste"></p>
+</section>
+
+<section class="karte" aria-labelledby="kalender-titel">
+<h2 id="kalender-titel">Adventskalender</h2>
+<p class="hinweis">Jeden Tag darfst du ein Türchen öffnen. Dahinter wartet eine Aufgabe, für die du Punkte bekommst.</p>
+<div class="tueren" id="tueren"></div>
+</section>
+
+<section class="karte" aria-labelledby="praemien-titel">
+<h2 id="praemien-titel">Prämien</h2>
+<p class="hinweis">Hast du genug Punkte, kannst du dir eine Prämie aussuchen und direkt einlösen.</p>
+<div class="stufen" id="praemien"></div>
+</section>
+
+<section class="karte" aria-labelledby="verlauf-titel">
+<h2 id="verlauf-titel">Punkte-Verlauf</h2>
+<ul class="verlauf" id="verlauf"></ul>
+</section>
+</main>
+
+<footer class="fuss">
+<p class="fuss-gruss">Frohe Weihnachten</p>
+<p class="fuss-von" id="fuss-von"></p>
+</footer>
+
+<dialog id="dialog" aria-labelledby="dialog-titel">
+<form method="dialog" class="dialog-inhalt"></form>
+</dialog>
+
+<noscript><p class="fehler">Bitte aktiviere JavaScript, um den Adventskalender zu sehen.</p></noscript>
+<script src="app.js" defer></script>
+</body>
+</html>

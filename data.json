@@ -1,0 +1,68 @@
+{
+  "jahr": 2026,
+  "absender": "Robin",
+  "kontakt": {
+    "whatsapp": "",
+    "email": ""
+  },
+  "verlauf": [],
+  "aufgaben": [
+    { "tag": 1, "text": "Schick mir ein Foto von deinem Pferd.", "punkte": 5 },
+    { "tag": 2, "text": "Schreib mir drei Dinge, die du heute gut fandest.", "punkte": 5 },
+    { "tag": 3, "text": "Erzähl mir von deinem lustigsten Kunden des Tages bei dm.", "punkte": 10 },
+    { "tag": 4, "text": "Schick mir ein Foto von deinem Red Bull in der Pause.", "punkte": 5 },
+    { "tag": 5, "text": "Back mit mir Plätzchen.", "punkte": 20 },
+    { "tag": 6, "text": "Nikolaus! Heute gibt es Punkte geschenkt. Schau mal in deinen Stiefel.", "punkte": 15, "hinweis": "Die Punkte bekommst du heute einfach so." },
+    { "tag": 7, "text": "Schick mir eine Sprachnachricht, in der du ein Weihnachtslied singst.", "punkte": 10 },
+    { "tag": 8, "text": "Fotografiere etwas Weihnachtliches mit deiner Kamera.", "punkte": 10 },
+    { "tag": 9, "text": "Bring deinem Pferd ein Leckerli von mir und schick mir ein Beweisfoto.", "punkte": 10 },
+    { "tag": 10, "text": "Erzähl mir einen Witz, auch wenn er schlecht ist.", "punkte": 5 },
+    { "tag": 11, "text": "Schau mit mir einen Weihnachtsfilm. Ich darf ihn aussuchen.", "punkte": 15 },
+    { "tag": 12, "text": "Geh mit mir auf den Weihnachtsmarkt.", "punkte": 20 },
+    { "tag": 13, "text": "Dekoriere mit mir die Wohnung weihnachtlich.", "punkte": 15 },
+    { "tag": 14, "text": "Schick mir das älteste Foto von uns auf deinem Handy.", "punkte": 5 },
+    { "tag": 15, "text": "Zähl mir alle F1-Weltmeister seit 2010 auf.", "punkte": 10 },
+    { "tag": 16, "text": "Finde bei dm das lustigste Produkt und schick mir ein Foto davon.", "punkte": 10 },
+    { "tag": 17, "text": "Nenne mir drei Dinge, die du an deinem Pferd am meisten liebst.", "punkte": 5 },
+    { "tag": 18, "text": "Mach mit mir eine heiße Schokolade mit allem Drum und Dran.", "punkte": 15 },
+    { "tag": 19, "text": "Gewinn gegen mich in einem Spiel deiner Wahl.", "punkte": 25 },
+    { "tag": 20, "text": "Mach mit mir einen Winterspaziergang.", "punkte": 20 },
+    { "tag": 21, "text": "Schreib eine Liste mit fünf Dingen, die wir 2027 zusammen machen wollen.", "punkte": 15 },
+    { "tag": 22, "text": "Gib mir einen Kuss.", "punkte": 5 },
+    { "tag": 23, "text": "Erstelle eine Playlist mit Liedern, die dich an uns erinnern.", "punkte": 20 },
+    { "tag": 24, "text": "Frohe Weihnachten! Heute gibt es Punkte geschenkt.", "punkte": 30, "hinweis": "Die Punkte bekommst du heute einfach so." }
+  ],
+  "praemien": [
+    {
+      "punkte": 10,
+      "eintraege": [
+        "Ich bringe dir einen Red Bull zu dm",
+        "Du bestimmst einen ganzen Abend lang meine Musik im Auto",
+        "Ein Kompliment-Zettel, den ich dir morgens für die Arbeit in die Tasche lege",
+        "Du darfst deine kalten Füße an mir wärmen, ohne dass ich meckere",
+        "Ich mache das Bett",
+        "Ich creme dir den Rücken ein",
+        "Ich sage dir drei Dinge, die ich an dir liebe"
+      ]
+    },
+    {
+      "punkte": 20,
+      "eintraege": [
+        "Ich wasche und sauge dein Auto von innen",
+        "10 Minuten Rückenkraulen",
+        "Ich gehe für dich einkaufen",
+        "Du darfst mir eine Frisur deiner Wahl machen (kein Glätten)",
+        "10 Minuten Kopfkraulen"
+      ]
+    },
+    {
+      "punkte": 30,
+      "eintraege": [
+        "10 Minuten Fußmassage",
+        "Ich räume dein ganzes Zimmer auf",
+        "Eine Überraschungs-Snackbox",
+        "Ich bereite dir eine heiße Badewanne mit Kerzen und Badeschaum vor und lege dir eine Maske bereit"
+      ]
+    }
+  ]
+}
