@@ -322,6 +322,29 @@ h2 {
 .knopf.primaer { background: var(--rot); border-color: var(--rot); color: #FFFFFF; }
 .knopf.primaer:hover { background: var(--rot-dunkel); border-color: var(--rot-dunkel); }
 
+.vorhang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 36px 24px;
+  border: 1.5px dashed var(--gold);
+  border-radius: 16px;
+  background: var(--creme);
+  text-align: center;
+  color: var(--rot);
+}
+
+.vorhang-titel {
+  margin: 4px 0 0;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--rot);
+}
+
+.vorhang-text { margin: 0; max-width: 420px; color: var(--text-leise); }
+
 .verlauf { list-style: none; margin: 0; padding: 0; }
 
 .eintrag {

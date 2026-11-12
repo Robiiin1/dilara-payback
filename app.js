@@ -114,7 +114,10 @@ function kontoZeigen() {
   const naechste = stufen().find((s) => s.punkte > stand);
   const balken = document.getElementById('fortschritt');
   const text = document.getElementById('naechste');
-  if (naechste) {
+  if (!gestartet()) {
+    balken.style.width = '0%';
+    text.textContent = 'Am 1. Dezember geht es los!';
+  } else if (naechste) {
     balken.style.width = `${Math.max(0, Math.min(100, (stand / naechste.punkte) * 100))}%`;
     text.textContent = stand > 0
       ? `Noch ${punkteText(naechste.punkte - stand)} bis zur ${naechste.punkte}-Punkte-Prämie`
@@ -208,10 +211,51 @@ function einloesen(praemie, punkte) {
   });
 }
 
+function gestartet() {
+  return vorschau() || new Date() >= new Date(daten.jahr, 11, 1);
+}
+
+function geschenkIcon() {
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('viewBox', '0 0 24 24');
+  svg.setAttribute('width', '44');
+  svg.setAttribute('height', '44');
+  svg.setAttribute('fill', 'none');
+  svg.setAttribute('stroke', 'currentColor');
+  svg.setAttribute('stroke-width', '1.6');
+  svg.setAttribute('stroke-linecap', 'round');
+  svg.setAttribute('stroke-linejoin', 'round');
+  svg.setAttribute('aria-hidden', 'true');
+  const pfad = document.createElementNS(ns, 'path');
+  pfad.setAttribute('d', 'M4 11h16v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9zM3 7h18v4H3zM12 7v14M12 7c-1.5-3-5-3.5-5.5-1.5S9 7 12 7zM12 7c1.5-3 5-3.5 5.5-1.5S15 7 12 7z');
+  svg.append(pfad);
+  return svg;
+}
+
 function praemienZeigen() {
   const stand = punktestand();
   const farben = ['var(--rot)', 'var(--gruen)', 'var(--gold-dunkel)'];
   const container = document.getElementById('praemien');
+  const hinweis = document.getElementById('praemien-hinweis');
+  if (!gestartet()) {
+    hinweis.hidden = true;
+    const tage = tageBis(1);
+    container.replaceChildren(
+      el('div', { class: 'vorhang' }, [
+        geschenkIcon(),
+        el('p', { class: 'vorhang-titel', text: 'Noch ein Geheimnis' }),
+        el('p', {
+          class: 'vorhang-text',
+          text: tage === 1
+            ? 'Morgen siehst du hier, wofür du deine Punkte einlösen kannst.'
+            : `Ab dem 1. Dezember siehst du hier, wofür du deine Punkte einlösen kannst. Noch ${tage} Tage.`
+        })
+      ])
+    );
+    return;
+  }
+  hinweis.hidden = false;
   const karten = stufen().map((stufe, i) => {
     const reicht = stand >= stufe.punkte;
     return el('article', { class: 'stufe', 'aria-label': `Prämien für ${stufe.punkte} Punkte` }, [
