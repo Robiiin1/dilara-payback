@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin – Prämienkatalog</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231F4D3A' d='M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Nunito:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="hero hero-klein">
+<p class="eyebrow">Admin</p>
+<h1>Punkte verwalten</h1>
+<p class="untertitel">Gutschreiben, einlösen und den Verlauf pflegen</p>
+</header>
+
+<main>
+<section class="karte" id="anmeldung" aria-labelledby="anmeldung-titel">
+<h2 id="anmeldung-titel">Mit GitHub verbinden</h2>
+<p class="hinweis">Die Daten werden nur in diesem Browser gespeichert. Der Token braucht nur die Berechtigung „Contents: Read and write“ für dieses eine Repository.</p>
+<form id="anmeldung-form" class="formular">
+<div class="feld-reihe">
+<label class="feld">
+<span>GitHub-Name</span>
+<input id="owner" name="owner" required autocomplete="off" spellcheck="false">
+</label>
+<label class="feld">
+<span>Repository</span>
+<input id="repo" name="repo" required autocomplete="off" spellcheck="false">
+</label>
+<label class="feld feld-schmal">
+<span>Branch</span>
+<input id="branch" name="branch" value="main" required autocomplete="off" spellcheck="false">
+</label>
+</div>
+<label class="feld">
+<span>Personal Access Token</span>
+<input id="token" name="token" type="password" required autocomplete="off" spellcheck="false">
+</label>
+<button type="submit" class="knopf primaer">Verbinden</button>
+</form>
+</section>
+
+<div id="bereich" hidden>
+<section class="karte status-leiste">
+<p id="verbunden" class="verbunden"></p>
+<div class="status-knoepfe">
+<a class="knopf" id="seite-link" href="./" target="_blank" rel="noopener">Seite ansehen</a>
+<button type="button" class="knopf" id="neu-laden">Neu laden</button>
+<button type="button" class="knopf" id="abmelden">Abmelden</button>
+</div>
+</section>
+
+<section class="karte konto" aria-labelledby="konto-titel">
+<h2 id="konto-titel" class="klein-titel">Ihr Punktestand</h2>
+<p class="punkte-zahl"><span id="punkte">0</span><span class="punkte-einheit">Punkte</span></p>
+<p class="naechste" id="zusammenfassung"></p>
+</section>
+
+<section class="karte" aria-labelledby="tueren-titel">
+<h2 id="tueren-titel">Türchen</h2>
+<p class="hinweis">Hat sie die Aufgabe erledigt, schreibst du ihr hier die Punkte gut.</p>
+<ul class="admin-liste" id="admin-tueren"></ul>
+</section>
+
+<section class="karte" aria-labelledby="praemien-titel">
+<h2 id="praemien-titel">Prämien einlösen</h2>
+<p class="hinweis">Wenn du eine Prämie eingelöst hast, ziehst du ihr hier die Punkte ab.</p>
+<div class="stufen" id="admin-praemien"></div>
+</section>
+
+<section class="karte" aria-labelledby="manuell-titel">
+<h2 id="manuell-titel">Manueller Eintrag</h2>
+<p class="hinweis">Für Bonuspunkte, Joker oder Korrekturen. Negative Zahlen ziehen Punkte ab.</p>
+<form id="manuell-form" class="formular">
+<div class="feld-reihe">
+<label class="feld">
+<span>Beschreibung</span>
+<input id="manuell-text" required autocomplete="off" placeholder="z. B. Bonus für gute Laune">
+</label>
+<label class="feld feld-schmal">
+<span>Punkte</span>
+<input id="manuell-punkte" type="number" step="1" required>
+</label>
+</div>
+<button type="submit" class="knopf primaer">Eintragen</button>
+</form>
+</section>
+
+<section class="karte" aria-labelledby="verlauf-titel">
+<h2 id="verlauf-titel">Verlauf</h2>
+<ul class="verlauf" id="admin-verlauf"></ul>
+</section>
+</div>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<dialog id="dialog" aria-labelledby="dialog-titel">
+<form method="dialog" class="dialog-inhalt"></form>
+</dialog>
+
+<script src="admin.js" defer></script>
+</body>
+</html>
