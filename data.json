@@ -5,32 +5,136 @@
     "whatsapp": "",
     "email": ""
   },
-  "verlauf": [],
+  "verlauf": [
+    {
+      "datum": "2026-11-12",
+      "text": "test 1",
+      "punkte": 1
+    }
+  ],
   "aufgaben": [
-    { "tag": 1, "text": "Schick mir ein Foto von deinem Pferd.", "punkte": 5 },
-    { "tag": 2, "text": "Schreib mir drei Dinge, die du gut an mir findest.", "punkte": 5 },
-    { "tag": 3, "text": "Erzähl mir von deinem lustigsten Kunden des Tages bei dm.", "punkte": 10 },
-    { "tag": 4, "text": "Schick mir ein Foto von deinem Red Bull in der Pause.", "punkte": 5 },
-    { "tag": 5, "text": "Back mit mir Plätzchen.", "punkte": 20 },
-    { "tag": 6, "text": "Nikolaus! Heute gibt es Punkte geschenkt.", "punkte": 15, "hinweis": "Die Punkte bekommst du heute einfach so." },
-    { "tag": 7, "text": "Schick mir eine Sprachnachricht, in der du ein Weihnachtslied singst.", "punkte": 10 },
-    { "tag": 8, "text": "Fotografiere etwas Weihnachtliches mit deiner Kamera.", "punkte": 5 },
-    { "tag": 9, "text": "Bring deinem Pferd ein Leckerli von mir und schick mir ein Beweisfoto.", "punkte": 10 },
-    { "tag": 10, "text": "Erzähl mir einen Witz, auch wenn er schlecht ist.", "punkte": 5 },
-    { "tag": 11, "text": "Schau mit mir einen Weihnachtsfilm. Ich darf ihn aussuchen.", "punkte": 15 },
-    { "tag": 12, "text": "Imitiere eine Sprachnachricht wie ein F1-Boxenfunk", "punkte": 10 },
-    { "tag": 13, "text": "Mach eine Grimasse und schick mir das über Snap", "punkte": 5 },
-    { "tag": 14, "text": "Schick mir das schönste Foto von uns auf deinem Handy.", "punkte": 5 },
-    { "tag": 15, "text": "Zähl mir alle F1-Weltmeister seit 2010 auf.", "punkte": 10 },
-    { "tag": 16, "text": "Finde bei dm das lustigste Produkt und schick mir ein Foto davon.", "punkte": 5 },
-    { "tag": 17, "text": "Nenne mir drei Dinge, die du an deinem Pferd am meisten liebst.", "punkte": 5 },
-    { "tag": 18, "text": "Umarme mich 10 Sekunden lang", "punkte": 10 },
-    { "tag": 19, "text": "Gewinn gegen mich in einem Spiel Robin's Wahl.", "punkte": 15 },
-    { "tag": 20, "text": "Mach mit mir einen Winterspaziergang.", "punkte": 10 },
-    { "tag": 21, "text": "Schreib eine Liste mit fünf Dingen, die wir 2027 zusammen machen wollen.", "punkte": 10 },
-    { "tag": 22, "text": "Gib mir einen Kuss.", "punkte": 5 },
-    { "tag": 23, "text": "Erstelle eine Playlist mit meinen 10 Lieblingsliedern.", "punkte": 10 },
-    { "tag": 24, "text": "Frohe Weihnachten! Heute gibt es Punkte geschenkt.", "punkte": 30, "hinweis": "Die Punkte bekommst du heute einfach so." }
+    {
+      "tag": 1,
+      "text": "Schick mir ein Foto von deinem Pferd.",
+      "punkte": 5
+    },
+    {
+      "tag": 2,
+      "text": "Schreib mir drei Dinge, die du gut an mir findest.",
+      "punkte": 5
+    },
+    {
+      "tag": 3,
+      "text": "Erzähl mir von deinem lustigsten Kunden des Tages bei dm.",
+      "punkte": 10
+    },
+    {
+      "tag": 4,
+      "text": "Schick mir ein Foto von deinem Red Bull in der Pause.",
+      "punkte": 5
+    },
+    {
+      "tag": 5,
+      "text": "Back mit mir Plätzchen.",
+      "punkte": 20
+    },
+    {
+      "tag": 6,
+      "text": "Nikolaus! Heute gibt es Punkte geschenkt.",
+      "punkte": 15,
+      "hinweis": "Die Punkte bekommst du heute einfach so."
+    },
+    {
+      "tag": 7,
+      "text": "Schick mir eine Sprachnachricht, in der du ein Weihnachtslied singst.",
+      "punkte": 10
+    },
+    {
+      "tag": 8,
+      "text": "Fotografiere etwas Weihnachtliches mit deiner Kamera.",
+      "punkte": 5
+    },
+    {
+      "tag": 9,
+      "text": "Bring deinem Pferd ein Leckerli von mir und schick mir ein Beweisfoto.",
+      "punkte": 10
+    },
+    {
+      "tag": 10,
+      "text": "Erzähl mir einen Witz, auch wenn er schlecht ist.",
+      "punkte": 5
+    },
+    {
+      "tag": 11,
+      "text": "Schau mit mir einen Weihnachtsfilm. Ich darf ihn aussuchen.",
+      "punkte": 15
+    },
+    {
+      "tag": 12,
+      "text": "Imitiere eine Sprachnachricht wie ein F1-Boxenfunk",
+      "punkte": 10
+    },
+    {
+      "tag": 13,
+      "text": "Mach eine Grimasse und schick mir das über Snap",
+      "punkte": 5
+    },
+    {
+      "tag": 14,
+      "text": "Schick mir das schönste Foto von uns auf deinem Handy.",
+      "punkte": 5
+    },
+    {
+      "tag": 15,
+      "text": "Zähl mir alle F1-Weltmeister seit 2010 auf.",
+      "punkte": 10
+    },
+    {
+      "tag": 16,
+      "text": "Finde bei dm das lustigste Produkt und schick mir ein Foto davon.",
+      "punkte": 5
+    },
+    {
+      "tag": 17,
+      "text": "Nenne mir drei Dinge, die du an deinem Pferd am meisten liebst.",
+      "punkte": 5
+    },
+    {
+      "tag": 18,
+      "text": "Umarme mich 10 Sekunden lang",
+      "punkte": 10
+    },
+    {
+      "tag": 19,
+      "text": "Gewinn gegen mich in einem Spiel Robin's Wahl.",
+      "punkte": 15
+    },
+    {
+      "tag": 20,
+      "text": "Mach mit mir einen Winterspaziergang.",
+      "punkte": 10
+    },
+    {
+      "tag": 21,
+      "text": "Schreib eine Liste mit fünf Dingen, die wir 2027 zusammen machen wollen.",
+      "punkte": 10
+    },
+    {
+      "tag": 22,
+      "text": "Gib mir einen Kuss.",
+      "punkte": 5
+    },
+    {
+      "tag": 23,
+      "text": "Erstelle eine Playlist mit meinen 10 Lieblingsliedern.",
+      "punkte": 10
+    },
+    {
+      "tag": 24,
+      "text": "Frohe Weihnachten! Heute gibt es Punkte geschenkt.",
+      "punkte": 30,
+      "hinweis": "Die Punkte bekommst du heute einfach so."
+    }
   ],
   "praemien": [
     {
