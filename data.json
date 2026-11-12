@@ -5,13 +5,7 @@
     "whatsapp": "",
     "email": ""
   },
-  "verlauf": [
-    {
-      "datum": "2026-11-12",
-      "text": "test 1",
-      "punkte": 1
-    }
-  ],
+  "verlauf": [],
   "aufgaben": [
     {
       "tag": 1,
